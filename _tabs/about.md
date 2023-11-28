@@ -17,5 +17,5 @@ order: 4
 조금씩 발전 중
 <br>
 <br>
-<a>![alien](/assets/img/1f47e.png){: w="300"}</a>{: .light .img-link .shadow style="border-radius:20%;"}
-<a>![dance](/assets/img/1f47e.webp){: w="300"}</a>{: .dark .img-link .shadow style="border-radius:20%;"}
+<a><img src="/assets/img/1f47e.png" alt="alien" width="300" loading="lazy"></a>{: .light .img-link .shadow style="border-radius:20%;"}
+<a><img src="/assets/img/1f47e.webp" alt="dance" width="300" loading="lazy"></a>{: .dark .img-link .shadow style="border-radius:20%;"}
