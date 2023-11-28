@@ -24,29 +24,29 @@ order: 4
 <script>
 
 document.addEventListener('DOMContentLoaded', function () {
-  // no-popup 클래스를 가진 요소에 대해 처리
+  /* no-popup 클래스를 가진 요소에 대해 처리 */
   var noPopupElements = document.querySelectorAll('.no-popup');
   noPopupElements.forEach(function (element) {
-    // popup 클래스를 가지고 있는 경우에만 처리
+    /* popup 클래스를 가지고 있는 경우에만 처리 */
     if (element.classList.contains('popup')) {
-      // popup 클래스를 제거
+      /* popup 클래스를 제거 */
       element.classList.remove('popup');
     }
-    // shimmer 클래스를 가지고 있는 경우에만 처리
+    /* shimmer 클래스를 가지고 있는 경우에만 처리 */
     if (element.classList.contains('shimmer')) {
-      // shimmer 클래스를 제거
+      /* shimmer 클래스를 제거 */
       element.classList.remove('shimmer');
     }
-    // href 속성이 있는 경우 해당 속성을 삭제
+    /* href 속성이 있는 경우 해당 속성을 삭제 */
     if (element.getAttribute('href')) {
       element.removeAttribute('href');
     }
 
-    // 해당 태그를 span 태그로 변경
+    /* 해당 태그를 span 태그로 변경 */
     var spanElement = document.createElement('span');
     spanElement.innerHTML = element.innerHTML;
 
-    // 기존 태그가 가진 클래스를 모두 span 태그에 추가
+    /* 기존 태그가 가진 클래스를 모두 span 태그에 추가 */
     var classes = element.classList;
     for (var i = 0; i < classes.length; i++) {
       spanElement.classList.add(classes[i]);
