@@ -84,3 +84,33 @@ $(document).ready(function () {
   // border-bottom: solid 2px var(--heading-color);
 
 };
+
+$(document).ready(function () {
+  // no-popup 클래스를 가진 요소에 대해 처리
+  $('.no-popup').each(function () {
+    // popup 클래스를 가지고 있는 경우에만 처리
+    if ($(this).hasClass('popup')) {
+      // popup 클래스를 제거
+      $(this).removeClass('popup');
+    }
+    // shimmer 클래스를 가지고 있는 경우에만 처리
+    if ($(this).hasClass('shimmer')) {
+      // shimmer 클래스를 제거
+      $(this).removeClass('shimmer');
+    }
+    // href 속성이 있는 경우 해당 속성을 삭제
+    if ($(this).attr('href')) {
+      $(this).removeAttr('href');
+    }
+    // 해당 태그를 span 태그로 변경
+    var spanElement = $('<span>').html($(this).html());
+
+    // 기존 태그가 가진 클래스를 모두 span 태그에 추가
+    var classes = $(this).attr('class').split(' ');
+    for (var i = 0; i < classes.length; i++) {
+      spanElement.addClass(classes[i]);
+    }
+
+    $(this).replaceWith(spanElement);
+  });
+});
