@@ -1,0 +1,1 @@
+Sitemap: http://localhost:4000/blog-before-changing-theme/sitemap.xml
