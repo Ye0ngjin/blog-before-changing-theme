@@ -148,8 +148,9 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - sw.js # 기본 블로그에 접근하는 듯 해서 차단
-  - assets/js/data/swcache.js # 기본 블로그에 접근하는 듯 해서 차단
+  - /sw.js # 기본 블로그에 접근하는 듯 해서 차단
+  - /assets/js/data/swcache.js # 기본 블로그에 접근하는 듯 해서 차단
+  - /site.webmanifest # 기본 블로그에 접근하는 듯 해서 차단
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
