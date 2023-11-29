@@ -12,7 +12,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Programmers" %}
-                        <li><a href="./{{ category[0] | slugify }}" class="">프로그래머스 ({{category[1].size}})</a></li>
+                        <li><a href="{{'/categories'{{ category[0] | slugify }} | relative_url }}" class="">프로그래머스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -20,14 +20,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
-                        <li><a href="./{{ category[0] | slugify }}" class="">Blog Dev ({{category[1].size}})</a></li>
+                        <li><a href="{{'/categories'{{ category[0] | slugify }} | relative_url }}" class="">Blog Dev ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Git" %}
-                        <li><a href="./{{ category[0] | slugify }}" class="">Git & Github ({{category[1].size}})</a></li>
+                        <li><a href="{{'/categories'{{ category[0] | slugify }} | relative_url }}" class="">Git & Github ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
