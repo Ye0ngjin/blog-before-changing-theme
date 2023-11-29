@@ -163,6 +163,8 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
+  - Gemfile.lock
+  - minimal-mistakes-jekyll.gemspec
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
