@@ -148,6 +148,8 @@ include:
   - .htaccess
   - _pages
   - .nojekyll
+  - .gitignore
+  - static.yml
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
